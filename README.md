@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD033 -->
+
 # Cricket Bowler Biomechanical Analyzer Using YOLOv8-Pose
 
 An advanced computer-vision-based biomechanics analysis system designed to track, map, and evaluate cricket bowling actions from video footage. Utilizing a custom fine-tuned **YOLOv8x-Pose** architecture, this tool extracts high-precision joint coordinates to perform real-time kinematic calculations, generating a side-by-side biomechanical overlay and telemetry graphs.
@@ -10,7 +12,7 @@ Below are the video representations of the system in action. You can see the pro
 
 | Raw Input Video | Biomechanical Analysis |
 | :---: | :---: |
-| [Download / Watch Raw](https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/clip.webm) | [Download / Watch Analysis](https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/output_analysis2.webm) |
+| <video src="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/clip.webm" controls width="100%"></video><br><a href="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/clip.webm" target="_blank">Download / Watch Raw</a> | <video src="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/output_analysis2.webm" controls width="100%"></video><br><a href="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/output_analysis2.webm" target="_blank">Download / Watch Analysis</a> |
 
 ---
 
