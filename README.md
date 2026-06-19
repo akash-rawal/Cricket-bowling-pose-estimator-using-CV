@@ -18,7 +18,13 @@ Below are the video representations of the system in action. You can see the pro
 
 ### YouTube Walkthrough
 
-[![Watch the YouTube Video](https://img.youtube.com/vi/BOoewzRyMfA/0.jpg)](https://www.youtube.com/watch?v=BOoewzRyMfA)
+<a href="https://www.youtube.com/watch?v=BOoewzRyMfA" target="_blank">
+  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Walkthrough" />
+</a>
+
+<br><br>
+
+[![Watch the YouTube Video](https://img.youtube.com/vi/BOoewzRyMfA/hqdefault.jpg)](https://www.youtube.com/watch?v=BOoewzRyMfA)
 
 ---
 
