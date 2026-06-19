@@ -2,6 +2,8 @@
 
 # Cricket Bowler Biomechanical Analyzer Using YOLOv8-Pose
 
+![Overview](image.png)
+
 An advanced computer-vision-based biomechanics analysis system designed to track, map, and evaluate cricket bowling actions from video footage. Utilizing a custom fine-tuned **YOLOv8x-Pose** architecture, this tool extracts high-precision joint coordinates to perform real-time kinematic calculations, generating a side-by-side biomechanical overlay and telemetry graphs.
 
 ---
@@ -13,6 +15,10 @@ Below are the video representations of the system in action. You can see the pro
 | Raw Input Video | Biomechanical Analysis |
 | :---: | :---: |
 | <video src="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/clip.webm" controls width="100%"></video><br><a href="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/clip.webm" target="_blank">Download / Watch Raw</a> | <video src="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/output_analysis2.webm" controls width="100%"></video><br><a href="https://storage.googleapis.com/labellerr-cdn/%20%201%20cricket/output_analysis2.webm" target="_blank">Download / Watch Analysis</a> |
+
+### YouTube Walkthrough
+
+[![Watch the YouTube Video](https://img.youtube.com/vi/BOoewzRyMfA/0.jpg)](https://www.youtube.com/watch?v=BOoewzRyMfA)
 
 ---
 
@@ -182,10 +188,10 @@ speed_buffer  = deque(maxlen=7)    # rolling buffer for smoothing
 ```
 
 * **Pixel-to-Meter Calibration:** Automatically calculated frame-by-frame based on the detected shoulder-to-wrist pixel distance compared to real-world arm length:
-  $$\text{scale} = \frac{\text{ARM\_LENGTH\_M (2.5m)}}{\text{arm\_pixels}}$$
+  $$\text{Scale} = \frac{\text{Arm Length (2.5m)}}{\text{Arm Pixels}}$$
 * **Speed Calculation:**
-  $$\text{speed}_{\text{px}} = \sqrt{dx^2 + dy^2} \times \text{FPS}$$
-  $$\text{speed}_{\text{ms}} = \text{speed}_{\text{px}} \times \text{scale}$$
+  $$\text{Speed}_{\text{px}} = \sqrt{dx^2 + dy^2} \times \text{FPS}$$
+  $$\text{Speed}_{\text{ms}} = \text{Speed}_{\text{px}} \times \text{Scale}$$
   A 7-frame rolling average is applied to smooth out instantaneous spikes.
 
 *Fallback:* If a frame contains a rejected wrist coordinate jump or keypoints are missing, the last known speed value is repeated.
@@ -221,6 +227,6 @@ out.write(combined)
 ```
 
 At the end of processing, the system prints the final stats:
-$$\text{Detection Rate} = \frac{\text{detected\_frames}}{\text{frame\_count}} \times 100\%$$
+$$\text{Detection Rate} = \frac{\text{Detected Frames}}{\text{Total Frames}} \times 100\%$$
 
 ---
