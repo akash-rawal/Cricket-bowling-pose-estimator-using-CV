@@ -59,7 +59,7 @@ yolov8x-pose.pt
 
 # # Data & Datasets
 # dataset/
-# frames/
+frames/
 # labels_all/
 # annotations/
 # graphs/
