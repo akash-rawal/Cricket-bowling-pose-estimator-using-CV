@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pyinstaller
+#  Usually these written to a sibling directory where the pyinstaller command is run
+build/
+dist/
+
+# IPython / Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Environments
+bowling_env/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# YOLOv8 / Ultralytics weights and runs
+runs/
+weights/
+*.pt
+yolov8x-pose.pt
+
+# # Data & Datasets
+# dataset/
+# frames/
+# labels_all/
+# annotations/
+# graphs/
+# *.zip
+# *.tar.gz
+# *.tgz
+# *.rar
+
+# # Media / Output files
+# *.mp4
+# *.avi
+# *.mov
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif

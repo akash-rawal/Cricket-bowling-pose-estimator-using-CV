@@ -1,0 +1,11 @@
+path: dataset
+train: train/images
+val: val/images
+
+# Number of classes
+nc: 1
+names: ['bowler']
+
+# Keypoint config
+# [num_keypoints, dimensions] 3 keypoints, each has x,y,visibility
+kpt_shape: [3, 3]
